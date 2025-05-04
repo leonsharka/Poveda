@@ -1,0 +1,381 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.s1 {
+  font-size: 5vw;
+  color: #810000;
+  font-family: "Meie Script";
+  position: relative;
+  right: 10;
+}
+.s2 {
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  left: 17%;
+}
+#header {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 2em;
+  position: absolute;
+  top: 0;
+}
+#title {
+  font-size: 4vw;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+}
+#header a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#header li {
+  display: inline-block;
+  font-size: 1.7vw;
+  margin: 0 1.5em;
+}
+.links {
+  position: relative;
+  width: max-content;
+}
+.links::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 12%;
+  border-radius: 1em;
+  width: 0;
+  left: 0;
+  bottom: -10%;
+  transition: 0.3s;
+}
+.links:hover::after {
+  width: 100%;
+  transition: 0.3s;
+}
+#menu {
+  display: none !important;
+  font-size: 3vw !important;
+  cursor: pointer;
+}
+
+#sideBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  background-color: #ffffff32;
+  backdrop-filter: blur(30px);
+  color: #000;
+  display: none;
+  padding: 3%;
+}
+#sideBar a {
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#sideBar li {
+  display: block;
+  font-size: 2.5vw;
+  margin: 5vh 3vw;
+}
+#close {
+  margin-top: 0 !important;
+  cursor: pointer;
+}
+.sideLink {
+  position: relative;
+  width: max-content;
+}
+.sideLink::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  height: 10%;
+  width: 0;
+  border-radius: 1em;
+  left: 0;
+  bottom: -10%;
+  transition: 0.3s;
+}
+.sideLink:hover::after {
+  width: 100%;
+  transition: 0.3s;
+}
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#headerText {
+  color: #fff;
+  margin-left: 15vw;
+  text-shadow: 6px 6px 10px gray;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#headerText h1 {
+  font-size: 6vw;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+#headerText h2 {
+  font-size: 3vw;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+#headerText button {
+  width: 15vw;
+  height: 10vh;
+  font-size: 2vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 3em;
+  transition: 0.3s;
+}
+#headerText button:hover {
+  color: black;
+  background-color: #fff;
+  transition: 0.3s;
+}
+#visit {
+  width: 100%;
+  height: 90vh;
+  padding: 0 4vw;
+  background-color: #c7c7c7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.sub-title {
+  position: absolute;
+  top: 6%;
+  font-size: 3vw;
+  font-family: "Times New Roman", Times, serif;
+}
+.card {
+  width: 25vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8%;
+}
+.cardImg {
+  width: 25vw;
+  height: 42vh;
+  background-image: url(forest.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0.5em;
+}
+.two {
+  background-image: url(fshati.jpg);
+}
+.three {
+  background-image: url(rei.jpg);
+}
+
+#visit h2 {
+  color: rgb(44, 44, 44);
+  text-transform: uppercase;
+}
+#visit button {
+  width: 13vw;
+  text-transform: uppercase;
+  height: 8vh;
+  background-color: transparent;
+  border: 1px solid rgb(44, 44, 44);
+  color: rgb(44, 44, 44);
+  font-size: 1.2vw;
+  font-weight: 600;
+  border-radius: 1.5em;
+  transition: 0.3s;
+}
+#visit button:hover {
+  background-color: rgb(44, 44, 44);
+  color: #c7c7c7;
+  transition: 0.3s;
+}
+#visit span {
+  width: max-content;
+  margin-left: -2vw;
+  position: relative;
+  left: 1%;
+  top: 13%;
+  font-size: 1.2em;
+}
+#about {
+  padding: 1em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #aaaaaa;
+  color: rgb(44, 44, 44);
+}
+.textCon {
+  padding: 0 1.5em;
+}
+.textCon h2 {
+  font-size: 4vw;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+}
+.textCon p {
+  font-size: 1vw;
+}
+.imgCon {
+  width: 30vw;
+  height: 65vh;
+  background-image: url(about.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#about button {
+  width: 13vw;
+  height: 8vh;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgb(44, 44, 44);
+  background-color: transparent;
+  border: 2px solid rgb(44, 44, 44);
+  border-radius: 1.3em;
+  transition: 0.3s;
+}
+#about button:hover {
+  background-color: rgb(44, 44, 44);
+  color: #aaaaaa;
+  transition: 0.3s;
+}
+@media (max-width: 1080px) {
+  #hero {
+    height: 80vh;
+  }
+  #headerText button {
+    width: 20vw;
+    height: 9vh;
+    margin: 0 auto;
+  }
+  #headerText {
+    height: 45vh;
+    text-align: center;
+    margin-left: 0;
+  }
+  #hero {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 800px) {
+  #menu {
+    display: inline-block !important;
+  }
+  .links {
+    display: none !important;
+  }
+  #hero {
+    height: 80vh;
+  }
+  #headerText {
+    height: 50vh;
+  }
+}
+@media (max-width: 650px) {
+  #headerText p {
+    font-size: 1.5vw;
+  }
+  #headerText {
+    height: 35vh;
+  }
+  #visit {
+    flex-direction: column;
+    height: max-content;
+  }
+  .sub-title {
+    position: absolute;
+    top: 1%;
+  }
+  #visit {
+    padding: 1em;
+  }
+  .cardImg {
+    width: 70vw;
+  }
+  #visit button {
+    height: 6vh;
+    width: 30vw;
+  }
+  .imgCon {
+    width: 40vw;
+  }
+}
+@media (max-width: 450px) {
+  #sideBar {
+    width: 75vw;
+  }
+  #headerText p {
+    font-size: 1vw;
+  }
+  #headerText button {
+    margin: 0 auto;
+    width: 20vw;
+    height: 6vh;
+  }
+  #headerText {
+    height: 20vh;
+  }
+  #hero {
+    height: 60vh;
+  }
+  .imgCon {
+    display: none;
+  }
+  .textCon {
+    background-image: url(about.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #about button {
+    border-color: #fff;
+    color: #fff;
+    width: 25vw;
+    height: 5vh;
+  }
+}
